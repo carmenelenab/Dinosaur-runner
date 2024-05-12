@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background: rgb(174, 174, 209);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.game-board {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Center horizontally and vertically */
+    text-align: center;
+
+    width: 700px;
+    height: 200px;
+
+    border: 1.5px solid gray;
+    background-color: rgb(190, 181, 181);
+}
+
+#timer {
+    font-size: 20px;
+    color: rgb(95, 7, 7);
+    top: 10px;
+    right: 10px;
+}
+
+#character {
+    position: absolute;
+    left: 5px;
+    top: 140px;
+    height: 60px;
+    width: 20px;
+
+    background-color: greenyellow;
+}
+
+.jump {
+    animation: jump 0.5s;
+}
+
+@keyframes jump {
+    0% {
+        top: 140px;
+    }
+
+    30% {
+        top: 80px;
+    }
+
+    70% {
+        top: 80px;
+    }
+
+    100% {
+        top: 140px;
+    }
+}
+
+#obstacle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    height: 50px;
+    width: 20px;
+
+    background-color: black;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(187, 60, 149, 0.9);
+    padding: 20px;
+    z-index: 999;
+    display: none;
+    text-align: center;
+}
