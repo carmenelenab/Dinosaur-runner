@@ -72,6 +72,20 @@ body {
     background-color: black;
 }
 
+.moveObstacle {
+    animation: moveObstacle linear 4s infinite;
+}
+
+@keyframes moveObstacle {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
 #game-over {
     position: absolute;
     top: 50%;
